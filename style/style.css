@@ -1,0 +1,79 @@
+body {
+    background-image: url("../images/bg-01.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.modal-content {
+    width: 80%;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 41px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.firework {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #f00;
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+}
+
+.fire {
+    display: flex;
+    width: 10%;
+    margin-left: 45%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.link-fire {
+    text-decoration: none;
+}
+
+.btn-fire {
+    background-color: transparent;
+    color: yellow;
+    border-radius: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(20);
+        opacity: 0;
+    }
+}
+
+.btn-click {
+    background: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 27px;
+    font-size: 20px;
+    font-family: Jost;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
